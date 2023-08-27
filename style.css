@@ -1,0 +1,338 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;300;400;500;600&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    text-decoration: none;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+/* ! header start */
+
+header {
+    background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(./images/bg.webp), no-repeat;
+    background-position: center;
+    background-size: cover;
+    min-height: 100vh;
+    position: relative;
+}
+
+header nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    padding: 10px 20px;
+}
+
+header nav .nav-links {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    flex: 1;
+}
+
+
+
+.nav-links a img {
+    width: 130px;
+    transition: .3s;
+}
+
+.nav-links a img:hover {
+    transform: scale(1.1);
+
+}
+
+header nav .nav-links ul li {
+    display: inline-block;
+    padding: 10px 12px;
+}
+
+header nav .nav-links ul li a {
+    font-size: 15px;
+    color: #fff;
+}
+
+header nav .nav-links ul li a::after {
+    content: '';
+    width: 0%;
+    height: 2px;
+    transition: .5s;
+    background-color: red;
+    display: block;
+    margin-top: 7px;
+}
+
+header nav .nav-links ul li a:hover::after {
+    width: 100%;
+}
+
+
+header nav .fa-bars {
+    display: none;
+    font-size: 35px;
+    color: #fff;
+    cursor: pointer;
+    transition: .3s;
+}
+
+header nav .fa-bars:hover {
+    transform: scale(1.1);
+}
+
+/*! header end*/
+
+/* text box start */
+
+.text-box {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    width: 90%;
+
+}
+
+.text-box h1 {
+    color: #fff;
+    font-size: 60px;
+
+}
+
+.text-box p {
+    margin: 20px 40px;
+    font-size: 16px;
+    color: #ccc;
+    line-height: 1.8;
+}
+
+.btn {
+    display: inline-block;
+    margin: auto;
+    padding: 10px 30px;
+    color: #fff;
+    background-color: transparent;
+    border: 1px solid #ccc;
+    transition: .3s;
+}
+
+.btn:hover {
+    background-color: red;
+}
+
+/* text box end */
+
+
+.center-section {
+    width: 80%;
+    padding-top: 80px;
+    text-align: center;
+    margin: auto;
+}
+
+.center-section h1 {
+    font-size: 35px;
+}
+
+.center-section p {
+    color: #777;
+    font-size: 15px;
+    font-weight: 300;
+    line-height: 20px;
+    padding: 10px;
+}
+
+.center-col {
+    flex-basis: 30%;
+    border-radius: 15px
+}
+
+/* course */
+
+.row {
+    display: flex;
+    margin-top: 20px;
+    justify-content: space-between;
+}
+
+.course .row .col {
+    background-color: rgb(233, 229, 222);
+    margin-bottom: 10px;
+    transition: .3s;
+}
+
+.course .row .col:hover {
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.7);
+}
+
+/* course end */
+
+/* campus */
+
+.campus .row .col {
+    margin-bottom: 30px;
+    position: relative;
+    overflow: hidden;
+}
+
+.campus .row .col img {
+    width: 100%;
+    display: block;
+}
+
+.campus .row .col .layer {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    transition: .3s;
+}
+
+.campus .row .col .layer:hover {
+    background-color: rgba(190, 109, 38, 0.4);
+    transition: .3s;
+}
+
+.campus .row .col .layer h3 {
+    font-size: 25;
+    color: #fff;
+    position: absolute;
+    width: 100%;
+    bottom: 0;
+    transition: .3s;
+    opacity: 0;
+}
+
+.campus .row .col .layer:hover h3 {
+    bottom: 50%;
+    opacity: 1;
+}
+
+
+
+/* facilities */
+
+.facilities .row .col img {
+    width: 100%;
+    border-radius: 15px;
+}
+
+
+/* testemonials */
+
+
+
+
+.testemonials .row .col {
+    background-color: antiquewhite;
+    margin-bottom: 10px;
+    text-align: left;
+    cursor: pointer;
+    display: flex;
+    padding: 10px;
+}
+
+.testemonials .row .col img {
+    height: 60px;
+    width: 60px;
+    margin-top: 10px;
+    border: 6px solid transparent;
+    border-radius: 50%;
+    background-image: linear-gradient(white, white), linear-gradient(to right, red, yellow);
+    background-origin: border-box;
+    background-clip: content-box, border-box;
+    animation: anim-color 1s 2 alternate-reverse;
+}
+
+.testemonials .row .col div h2 {
+    margin-top: 10px;
+    font-size: 20px
+}
+
+.testemonials .row .col div .fa-star {
+    color: red;
+}
+
+/* ua section */
+
+.ua {
+    background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(./images/london.jpeg), no-repeat;
+    background-position: center;
+    background-size: cover;
+    padding: 100px 0;
+    color: white;
+    margin-top: 100px;
+    border-radius: 15px;
+}
+
+.ua h1 {
+    margin-bottom: 40px;
+    font-size: 30px;
+}
+
+
+
+.footer i {
+    color: red;
+}
+
+.footer .icons {
+    margin: 10px;
+}
+
+.footer .icons i {
+    margin: 10px;
+    cursor: pointer;
+    padding: 10px;
+}
+
+
+
+
+
+/* animations*/
+@keyframes anim-color {
+    from {
+        background-image: linear-gradient(white, white),
+            linear-gradient(to right, red, yellow);
+    }
+
+    to {
+        background-image: linear-gradient(white, white),
+            linear-gradient(to right, yellow, red);
+    }
+}
+
+
+@media screen and (max-width:768px) {
+    header nav .fa-bars {
+        display: block;
+    }
+
+    header nav ul {
+        display: none;
+    }
+
+    .course .row {
+        flex-direction: column;
+    }
+
+    .row {
+        flex-direction: column;
+    }
+
+    .text-box h1 {
+        margin-top: 50px;
+        font-size: 25px;
+    }
+
+    .text-box p {
+        font-size: 10px;
+    }
+}
